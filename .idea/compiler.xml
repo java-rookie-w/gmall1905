@@ -7,16 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gmall-mbg" />
+        <module name="gmall-ums" />
         <module name="gmall-sms" />
         <module name="gmall-oms" />
         <module name="gmall-common" />
-        <module name="gmall-ums" />
         <module name="gmall-admin-web" />
         <module name="gmall-pms" />
         <module name="gmall-api" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gmall-mbg" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

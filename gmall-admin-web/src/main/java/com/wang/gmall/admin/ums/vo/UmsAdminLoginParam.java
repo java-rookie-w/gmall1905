@@ -3,11 +3,13 @@ package com.wang.gmall.admin.ums.vo;
 import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.validator.constraints.NotEmpty;
 
+import java.io.Serializable;
+
 /**
  * 用户登录参数
  * Created by wang 4/26.
  */
-public class UmsAdminLoginParam {
+public class UmsAdminLoginParam implements Serializable {
     @ApiModelProperty(value = "用户名", required = true)
     @NotEmpty(message = "用户名不能为空")
     private String username;

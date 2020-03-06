@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.SysUsersMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, ORGANIZATIONID, ORGINTERNALCODE, FAILURETIMES, ISLOCK, ISADMIN, ISNORMAL, CHANGEPASSWORD, LOGINNAME, NAME, PASSWORD, MOBILE, WORKNO, FULLPINYIN, SIMPLEPINYIN, EMAIL, WORKPHONE, CREATEUSER, CREATEDATE, UPDATEUSER, UPDATEDATE, ISMANAGER, department, LOCKCODE, flag, manage_area, invalidate, AREA, PASSWORD2, WXOPENID
+    </sql>
+
+</mapper>

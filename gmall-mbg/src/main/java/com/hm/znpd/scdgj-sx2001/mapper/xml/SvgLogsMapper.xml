@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.SvgLogsMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, create_by, create_time, del_flag, update_by, update_time, cost_time, ip, ip_info, name, request_param, request_type, request_url, username, log_type
+    </sql>
+
+</mapper>

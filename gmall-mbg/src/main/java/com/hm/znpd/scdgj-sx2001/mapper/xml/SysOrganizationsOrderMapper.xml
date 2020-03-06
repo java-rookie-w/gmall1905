@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.SysOrganizationsOrderMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, customer_id, email, invoice_type, contract_type, contract_term, terminal, Total_sum, Charging_standard, flag, remark, create_time, end_time, create_name, deposit_bank, account, duty_paragraph, tax_rate, path, contractname
+    </sql>
+
+</mapper>

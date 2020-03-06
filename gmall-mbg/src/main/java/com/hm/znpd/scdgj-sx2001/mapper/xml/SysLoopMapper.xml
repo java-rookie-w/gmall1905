@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.SysLoopMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, distribute_substation_id, ct, type, rated_current, yc_ied, yx_ied, powersupply_loop, switchgear, collector_addr, switch_num, item_type, voltage_level, is_important, rated_capacity, device_id, electricityCT, voltageCT, Incoming
+    </sql>
+
+</mapper>

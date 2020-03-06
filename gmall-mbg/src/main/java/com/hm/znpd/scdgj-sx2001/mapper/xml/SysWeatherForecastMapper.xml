@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.SysWeatherForecastMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, cityId, updateTime, cond_code_d, cond_code_n, cond_txt_d, cond_txt_n, date, hum, mr, ms, pcpn, pop, pres, sr, ss, tmp_max, tmp_min, uv_index, vis, wind_deg, wind_dir, wind_sc, wind_spd
+    </sql>
+
+</mapper>

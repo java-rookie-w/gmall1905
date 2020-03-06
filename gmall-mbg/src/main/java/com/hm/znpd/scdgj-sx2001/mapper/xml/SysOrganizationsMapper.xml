@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.SysOrganizationsMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, PARENTID, SUBCOUNT, SEQ, MAXCODE, NAME, CONTACTWAY, ORGINTERNALCODE, SIMPLEPINYIN, FULLPINYIN, REMARK, CREATEUSER, UPDATEUSER, UPDATEDATE, CREATEDATE, abbreviation, city, contract_capacity, operating_capacity, household_num, voltage_level, addr, power_manager, power_head, manager_phone, head_phone, annexes, area_id, xaxis, yaxis, qylx, htkssj, htjzsj, htfj, htms, bz, filePath, installation_company, street, video_ip, video_port, video_username, video_password, video_streamtype, custype, company_log_path, company_image_path, customer_code, contract_number, user_summary, service_content, meter_type, online_monitoring, smsState, industry, contract_transformers, operating_transformers, flag, region
+    </sql>
+
+</mapper>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.BsdMeasTypeMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, code, desc, is_start, unit, fc, code645, hm645, iec104, standard_value, one_lower_limit, one_upper_limit, two_lower_limit, two_upper_limit, three_lower_limit, three_upper_limit, limit_unit, continue_time, create_time, update_time, parent_id
+    </sql>
+
+</mapper>

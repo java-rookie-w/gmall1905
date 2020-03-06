@@ -21,4 +21,8 @@ public class PmsProductQueryParam {
     @ApiModelProperty("商品品牌编号")
     private Long brandId;
 
+    private Long pageNum;
+
+    private Long pageSize;
+
 }

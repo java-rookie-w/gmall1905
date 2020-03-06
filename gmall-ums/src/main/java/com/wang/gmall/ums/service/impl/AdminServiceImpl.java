@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.DigestUtils;
 
+import javax.annotation.Resource;
 import java.sql.Wrapper;
 
 /**
@@ -23,7 +24,9 @@ import java.sql.Wrapper;
 @Service
 @Component
 public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements AdminService {
-    @Autowired
+    //这里的@Resource为byname，autowired为bytype
+    //    @Resource
+    @Autowired(required=false)
     AdminMapper adminMapper;
     @Override
     public Admin login(String username, String password) {
@@ -32,5 +35,10 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         QueryWrapper<Admin> wrapper = new QueryWrapper<Admin>().eq("username",username).eq("password",pw);
         Admin admin = adminMapper.selectOne(wrapper);
         return admin;
+    }
+
+    @Override
+    public Admin getAdminInfo(String name) {
+        return adminMapper.selectOne(new QueryWrapper<Admin>().eq("username",name));
     }
 }

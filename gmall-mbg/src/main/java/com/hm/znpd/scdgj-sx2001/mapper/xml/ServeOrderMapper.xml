@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.ServeOrderMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, num, unit_id, unit_name, unit_people, unit_phone, unit_address, content, create_time, supplier_id, supplier_name, supplier_people, supplier_phone, supplier_address, deal, deal_time, deal_type, deal_money, undeal_reason, jt_name, jt_people, jt_phone, jt_address, area
+    </sql>
+
+</mapper>

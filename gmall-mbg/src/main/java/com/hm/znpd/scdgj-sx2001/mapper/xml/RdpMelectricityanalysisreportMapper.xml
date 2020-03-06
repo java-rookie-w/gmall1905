@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.RdpMelectricityanalysisreportMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, username, former, capacity, days, pection, defect, elimination, everydaydl, totadl, maxdl, mindl, avgdl, jian, feng, gu, ping, fgpinfjia, monthmaxfe, monthmxafetime, monthavgload, monthavglaodl, average, pgTime, status, cusAddress, Dailymaximumload, user_number, pgstatus, isRead, deviceId, reportType, pgTimeSeason, hideYorN, cosMax, cosMin, cosAvg, cosPj, cosCkz
+    </sql>
+
+</mapper>

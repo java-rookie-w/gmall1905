@@ -24,6 +24,7 @@ import java.util.Map;
 /**
  * 后台用户管理
  */
+@CrossOrigin
 @RestController
 @Api(tags = "AdminController", description = "后台用户管理")
 @RequestMapping("/admin")
@@ -91,9 +92,10 @@ public class UmsAdminController {
     @ResponseBody
     public Object getAdminInfo(HttpServletRequest request) {
         String oldToken = request.getHeader(tokenHeader);
-        String userName = jwtTokenUtil.getUserNameFromToken(oldToken);
+        String userName = jwtTokenUtil.getUserNameFromToken(oldToken.substring(tokenHead.length()));
 
-        Admin umsAdmin = adminService.getOne(new QueryWrapper<Admin>().eq("username",userName));
+//        Admin umsAdmin = adminService.getOne(new QueryWrapper<Admin>().eq("username",userName));
+        Admin umsAdmin = adminService.getAdminInfo(userName);
         Map<String, Object> data = new HashMap<>();
         data.put("username", umsAdmin.getUsername());
         data.put("roles", new String[]{"TEST"});

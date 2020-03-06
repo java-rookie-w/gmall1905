@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.ChkBugMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, no, check_plan_id, check_content_id, customer_id, bug_level_id, bug_source, report_person, report_time, solve_time, bug_equipment_id, bug_description, bug_risk, solution_suggestion, bug_state_id, person_in_charge, treating_measur, ignore_reason, create_user_id, create_time, update_user_id, update_time, customer_addr, bug_user_phone, power, alarmDataId
+    </sql>
+
+</mapper>

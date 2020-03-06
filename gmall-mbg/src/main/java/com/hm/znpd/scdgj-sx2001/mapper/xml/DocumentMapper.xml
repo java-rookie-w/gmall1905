@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.znpd.scdgj-sx2001.mapper.DocumentMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, PID, PROJTYPE, DOCUTYPE, NAME, FILENAME, FLAG, OPRTID, OPRTNAME, OPRTTIME, DEPTID, DEPTNAME, SAVETYPE, SAVEDIR, FILESIZE, FILENAME_UNIQUE, FILENAME_UNIQUE_COMPRESS_SCALE, FILENAME_UNIQUE_COMPRESS_QUALITY, FILEFORMAT, TABLECODE, MODULEID, CLASSID, TABLERECORDID, PICTUREFLAG, REMARK, CLASSNAME, GPS_LOCATE, GPS_LOCATE_ADDR
+    </sql>
+
+</mapper>
